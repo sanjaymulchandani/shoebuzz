@@ -26,6 +26,69 @@
     float: right;
   }  
 
+  body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav{
+   background-color: black;
+    color: white;
+    padding: 20px 50px ;
+}
+
+.navTop{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+   margin-right: 50px; 
+   cursor: pointer;
+   color: lightgray;
+   font-weight: 400;
+}
+.slider{
+    background: url("https://cdn.wallpapersafari.com/82/70/bP2inC.jpg");
+   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);*/
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+.sliderItem{
+    width: 100vw;
+}
+
   #login_text{
     border: 1px solid transparent;
     object-fit: contain;
