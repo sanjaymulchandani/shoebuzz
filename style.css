@@ -26,7 +26,7 @@
     float: right;
   }  
 
-  body{
+body{
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
@@ -77,21 +77,9 @@ justify-content: space-between;
    color: lightgray;
    font-weight: 400;
 }
-.slider{
-    background: url("https://cdn.wallpapersafari.com/82/70/bP2inC.jpg");
-   /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);*/
-}
-.sliderWrapper{
-    display: flex;
-    width: 500vw;
-}
-.sliderItem{
-    width: 100vw;
-}
 
   #login_text{
     border: 1px solid transparent;
-    object-fit: contain;
     border-radius: 10px;
     margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
