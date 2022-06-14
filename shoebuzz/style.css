@@ -25,6 +25,7 @@
   
   .topnav-right {
     float: right;
+    margin-left: 1080px;
   }  
 
 body{
@@ -69,6 +70,8 @@ justify-content: space-between;
     font-size: 20px;
     border-bottom: 2px solid green;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 .navBottom{
   margin-left: 300px;
@@ -81,7 +84,9 @@ justify-content: space-between;
    margin-top: 15px;
    cursor: pointer;
    color: lightgray;
-   font-weight: 400;
+   font-weight: 300;
+   font-size: 25px;
+   text-decoration: none;
 }
 
   #login_text{
@@ -96,36 +101,40 @@ justify-content: space-between;
   text-decoration: none;
 }
 #login_register_div{
-  margin-left: 110px;
+  margin-left: 160px;
 }
 
 #slider_div{
+  display: flex;
   height:500px; 
   width: 650px; 
-  margin-top: 20px; 
+  margin-top: 30px; 
   margin-bottom: 50px; 
-  margin-left: 10px;
+  margin-left: 50px;
   float: left;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#offer_div{
-  border: 1px solid black; 
+#offer_div{ 
+  display: flex;
   height:500px; 
   width: 650px; 
   float: right;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-top: 30px;
+  margin-right: 50px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url("https://images.pexels.com/photos/2404959/pexels-photo-2404959.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 #cards_div{
+  display: flex;
   border: 1px solid black;
   margin-top: 600px;
   height: 400px;
 }
 
 #membership_div{
+  display: flex;
   border: 1px solid black;
   margin-top: 100px;
   height: 150px;
