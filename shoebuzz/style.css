@@ -71,7 +71,7 @@ justify-content: space-between;
     cursor: pointer;
 }
 .navBottom{
-  margin-left: 250px;
+  margin-left: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,5 +96,37 @@ justify-content: space-between;
   text-decoration: none;
 }
 #login_register_div{
-  margin-left: 50px;
+  margin-left: 110px;
+}
+
+#slider_div{
+  height:500px; 
+  width: 650px; 
+  margin-top: 20px; 
+  margin-bottom: 50px; 
+  margin-left: 10px;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#offer_div{
+  border: 1px solid black; 
+  height:500px; 
+  width: 650px; 
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#cards_div{
+  border: 1px solid black;
+  margin-top: 600px;
+  height: 400px;
+}
+
+#membership_div{
+  border: 1px solid black;
+  margin-top: 100px;
+  height: 150px;
 }
