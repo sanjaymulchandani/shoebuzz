@@ -48,33 +48,34 @@ justify-content: space-between;
 
 }
 
-.search{
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
+#search_bar{
+  margin-left: -870px;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  font-style: italic;
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+}
+::placeholder{
+  color: white;
 }
 
-.searchInput{
-    border: none;
-    background-color: transparent;
-    margin-bottom: -5px;
-    margin-top: -5px;
+#limited_offer_div{
+  margin-left: -50px;
 }
-.searchInput::placeholder{
-    color: lightgray;
-}
+
 .limitedOffer{
     font-size: 20px;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid greenyellow;
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
 .navBottom{
-  margin-left: 300px;
+  margin-left: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +102,7 @@ justify-content: space-between;
   text-decoration: none;
 }
 #login_register_div{
-  margin-left: 160px;
+  margin-left: 220px;
 }
 
 #slider_div{
@@ -134,4 +135,32 @@ justify-content: space-between;
   border: 1px solid black;
   margin-top: 100px;
   height: 150px;
+}
+
+/* Bags_Page_Code */
+
+#bag_cards1,#bag_cards2{
+  border: 1px solid black; 
+  height:320px;
+  width: 1324px;
+  margin-left: -107px;
+  margin-top: 50px;
+}
+
+
+#product1,#product2,#product3,#product4,#product5,#product6{
+  display: flex;
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+}
+
+#product7,#product8,#product9,#product10,#product11,#product12{
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  float: left;
 }
