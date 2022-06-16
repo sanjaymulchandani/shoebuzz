@@ -32,7 +32,8 @@ body{
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
-
+    overflow-x: hidden;
+    overflow-y:visible;
 }
 
 nav{
@@ -64,18 +65,19 @@ justify-content: space-between;
 }
 
 #limited_offer_div{
-  margin-left: -50px;
+  margin-left: -80px;
+  margin-right: 30px;
 }
 
-.limitedOffer{
+#cart{
     font-size: 20px;
     border-bottom: 2px solid greenyellow;
     cursor: pointer;
     color: white;
     text-decoration: none;
 }
-.navBottom{
-  margin-left: 400px;
+#nav_bottom{
+    margin-left: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,19 +92,20 @@ justify-content: space-between;
    text-decoration: none;
 }
 
-  #login_text{
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin-top: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+#logo{
+  margin-left: -10px;
+}
+#login_text{
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 #login_register_link{
+  margin-left: 150px;
   color: white;
   text-decoration: none;
-}
-#login_register_div{
-  margin-left: 140px;
 }
 
 #slider_div{
@@ -110,7 +113,7 @@ justify-content: space-between;
   width: 650px; 
   margin-top: 30px; 
   margin-bottom: 50px; 
-  margin-left: 50px;
+  margin-left: 10px;
   float: left;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -120,7 +123,7 @@ justify-content: space-between;
   width: 650px; 
   float: right;
   margin-top: 30px;
-  margin-right: 50px;
+  margin-right: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-image: url("https://images.pexels.com/photos/2404959/pexels-photo-2404959.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
@@ -139,8 +142,8 @@ justify-content: space-between;
 
 /* Bags_Page_Code */
 
-#bag_cards1,#bag_cards2{
-  border: 1px solid black; 
+#store_cards{
+  border: 1px solid transparent; 
   height:320px;
   width: 1324px;
   margin-left: -107px;
@@ -149,18 +152,11 @@ justify-content: space-between;
 
 
 #product1,#product2,#product3,#product4,#product5,#product6{
+  border-radius: 5px;
   display: flex;
-  border: 1px solid black;
   height: 300px;
   width: 200px;
-  margin: 10px;
+  margin: 11px;
   float: left;
-}
-
-#product7,#product8,#product9,#product10,#product11,#product12{
-  border: 1px solid black;
-  height: 300px;
-  width: 200px;
-  margin: 10px;
-  float: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }

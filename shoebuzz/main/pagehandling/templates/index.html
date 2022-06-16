@@ -18,25 +18,25 @@
 <body>
       <nav>
         <div class="navTop">
-            <div class="navItem container-sm">
+            <div class="container-sm" id="logo">
+              <a href="http://127.0.0.1:8000/">
               <img src="{% static 'img/sneakers.png' %}" alt="No img">
+              </a>
             </div>
             <div class="navItem">
               <input type="text" id="search_bar" placeholder="Search">
             </div>
             <div id="limited_offer_div">
-              <a class="limitedOffer" href="sale">Limited offer!</a>
+              <a id="cart" href="sale">Cart(0)</a>
             </div>
         </div>
-        <div class="navBottom container-sm">
+        <div id="nav_bottom" class="container-sm">
           <a class="menuItem " href="shoes">SHOES</a>
           <a class="menuItem " href="clothing">CLOTHING</a>
           <a class="menuItem " href="bags">BAGS</a>
           <a class="menuItem " href="sports">SPORTS</a>
           <a class="menuItem " style="color: red;" href="sale">SALE</a>
-          <div id="login_register_div">
-            <a href="login" id="login_register_link" >Login/Register</a>
-          </div>
+          <a href="login" id="login_register_link" >Login/Register</a>
         </div>
         
       </nav>
