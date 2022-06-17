@@ -10,8 +10,6 @@ def clothingPage(request):
     return render(request,'clothing.html')
 def shoesPage(request):
     return render(request,'shoes.html')
-def sportsPage(request):
-    return render(request,'sports.html')
 def salePage(request):
     return render(request,'sale.html')
 def loginPage(request):
