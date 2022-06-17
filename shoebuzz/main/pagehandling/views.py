@@ -1,6 +1,4 @@
-from itertools import product
 from django.shortcuts import render
-from . models import Products
 # Create your views here.
 def landingPage(request):
     return render(request,'index.html')
@@ -14,12 +12,14 @@ def salePage(request):
     return render(request,'sale.html')
 def loginPage(request):
     return render(request,'login.html')
-def registerPage(request):
+def register(request):
     return render(request,'register.html')
 def homePage(request):
     return render(request,'home.html')
 
     #add products details from django admin page to your templates:
-def products(request):
-    products = Products.objects.all()
-    return render(request,'shoes.html',{'products':products})
+# def products(request):
+#     products = Products.objects.all()
+#     return render(request,'shoes.html',{'products':products})
+
+

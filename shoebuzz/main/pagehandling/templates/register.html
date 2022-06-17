@@ -39,7 +39,17 @@
     
   </nav>
 
-    <div class="col-md-10 mx-auto col-lg-5 my-5">
+{% block content %}
+<h1>Register</h1>
+<form method="post">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="Register">
+</form>
+<a href="{% url 'login' %}">Back to login</a>
+{% endblock %}  
+
+    <!-- <div class="col-md-10 mx-auto col-lg-5 my-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light">
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" autofocus required>
@@ -69,7 +79,7 @@
           <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
           <hr class="my-4">
           <small class="text-muted">By clicking <span><a href="login">Sign In</a></span>, you agree to the terms of use.</small>
-        </form>
+        </form> -->
       </div>
 </body>
 </html>
