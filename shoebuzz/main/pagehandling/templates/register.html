@@ -38,17 +38,16 @@
     </div>
     
   </nav>
-
+<div class="col-md-10 mx-auto col-lg-5 my-5" style="border: 1px solid lightgray; padding: 10px;">
 {% block content %}
 <h1>Register</h1>
 <form method="post">
 	{% csrf_token %}
 	{{form.as_p}}
-	<input type="submit" value="Register">
+	<input type="submit" value="Register" class="btn btn-primary" style="margin-left: 450px;">
 </form>
-<a href="{% url 'login' %}">Back to login</a>
 {% endblock %}  
-
+</div>
     <!-- <div class="col-md-10 mx-auto col-lg-5 my-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light">
           <div class="form-floating mb-3">
