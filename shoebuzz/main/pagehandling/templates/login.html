@@ -34,21 +34,23 @@
         <a class="menuItem " href="clothing">CLOTHING</a>
         <a class="menuItem " href="bags">BAGS</a>
         <a class="menuItem " style="color: red;" href="sale">SALE</a>
-        <a href="login" id="login_register_link" >Login/Register</a>
+        <a href="http://127.0.0.1:8000/login/" id="login_register_link" >Login/Register</a>
       </div>
       
     </nav>
-              {% block content %}
-              <h1>LOGIN</h1>
-              <form method="post">
-                {% csrf_token %}
-                {{form.as_p}}
-                <input type="submit" value="Login">
-              </form>
-              <a href="{% url 'landingPage' %}">Back to Home</a>
-              <a href="{% url 'registerPage' %}">Register</a>
-              {% endblock %}
 </div>
 </div>
+
+{% block content %}
+<h1>LOGIN</h1>
+<form method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" value="Login">
+</form>
+<a href="{% url 'landingPage' %}">Back to Home</a>
+<a href="{% url 'registerPage' %}">Register</a>
+{% endblock %}
+
 </body>
 </html>
