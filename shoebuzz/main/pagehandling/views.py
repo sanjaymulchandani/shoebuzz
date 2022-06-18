@@ -15,7 +15,7 @@ def salePage(request):
     return render(request,'sale.html')
 def loginPage(request):
     return render(request,'login.html')
-def register(request):
+def registerPage(request):
     return render(request,'register.html')
 def homePage(request):
     return render(request,'home.html')
@@ -25,11 +25,10 @@ def homePage(request):
 #     products = Products.objects.all()
 #     return render(request,'shoes.html',{'products':products})
 
+def dashboard(request):
+    return render(request,'dashboard.html')
 
-def home(request):
-    return redirect(request,'index.html')
-
-def register(request):
+def registerPage(request):
     if request.method == "GET":
         return render(request,'register.html',{'form':CustomUserCreationForm})
     elif request.method == "POST":
@@ -37,4 +36,4 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request,user)
-            return redirect(reverse,("landingPage"))
+            return redirect(reverse,("dashboard"))
