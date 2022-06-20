@@ -17,9 +17,6 @@ def homePage(request):
     return render(request,'home.html')
 def dashboard(request):
     return render(request,'dashboard.html')
-def cart(request):
-    return render(request,'cart.html')
-
 def signup_view(request):
     if request.method == "POST":
         form = UserCreationForm(request.POST)

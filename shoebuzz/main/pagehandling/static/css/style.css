@@ -144,8 +144,9 @@ div.card {
 }
 
 #bottom_promo_div{
+  border: 1px solid yellow;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 5px;
   background: yellow;
 }
 
